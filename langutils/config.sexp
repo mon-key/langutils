@@ -1,3 +1,4 @@
+;; :NOTE auto-init should be set T when running langutils/src/example.lisp
 ((:lexicon :relative "data/LEXICON-BROWN-AND-WSJ.txt")
  (:stems :relative "data/stem-dict.txt")
  (:stopwords :relative "data/stopwords.txt")

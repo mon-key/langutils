@@ -5,6 +5,13 @@
 
 (in-package :langutils)
 
+(init-langutils)
+
+;; (get-lemma "evaluated")
+;; (morph-surface-forms "testing")
+;; (map 'list #'token-for-id (morph-surface-forms "testing"))
+;; (get-lemma "testify")
+
 (defparameter test-sentence1 "This is a test of the running system.  End of sentences.  ")
 (defparameter test-sentence2 "Ain't isn't a word.")
 (defparameter test-sentence3 "The acid rain in Spain falls mightily upon the plain.  Or does it?")
