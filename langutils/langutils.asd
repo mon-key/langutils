@@ -12,7 +12,9 @@
     :version "1.0"
     :author "Ian Eslick"
     :licence "BSD"
-    :depends-on (:s-xml-rpc :stdutils)
+    ;; :NOTE Where is the dependency on s-xml-rpc??? I don't find it.
+    ;; :depends-on (:s-xml-rpc :stdutils) 
+    :depends-on (:stdutils) 
     :components ((:module "src"
 			  :components ((:file "package")
 				       (:file "config")
