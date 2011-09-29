@@ -54,6 +54,7 @@
 
 (defmethod set-annotation ((doc vector-document) key value &key (method :override))
   "Add an annotation to object using method :override, :push, :duplicate-key"
+  ;; (flet ((set-on-empty () (assoc-setf (document-annotations doc) key value 'eq)))
   (flet ((set-on-empty () (assoc-setf (document-annotations doc) key value)))
     (case method
       (:override 
@@ -387,6 +388,7 @@
     (nreverse words)))
 ;;  (on-array (cons it rec) nil tokens))
 
+;; (defun phrase-words (phrase &optional index)
 (defmethod phrase-words ((phrase phrase) &optional index)
   (assert phrase)
   (cond ((null index)
